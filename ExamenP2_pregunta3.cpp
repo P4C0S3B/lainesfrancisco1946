@@ -18,21 +18,23 @@ int dificultad(int dif)
     return dif;
 }
 
-void condicion(int dif)
+int puntosMaquina(int dif)
 {
-    int ganar;
-    int y = dificultad(dif);
-    if(y == 1)
+    int ventaja = 0;
+    if(dif == 1)
     {
-        ganar = 0;
-    } else if (y == 2)
+        ventaja;
+    } else if (dif==2)
     {
-        ganar = 1;
-    } else if(y == 3)
+        ventaja=1;
+    } else if(dif==3)
     {
-        ganar = 2;
-    }   
+        ventaja=2;
+    }
+    return ventaja;
 }
+
+
 int seleccionjugador(int op)
 {
     cout<<"Seleccione una de las opciones: "<<endl;
@@ -62,23 +64,24 @@ int generarmaquina()
 }
 
 
-void comparacion(int op)
+void comparacion(int jugador, int maquina)
 {
-    int x = generarmaquina();
-    if(op== x)
-    {
-        cout<<"Empate"<<endl;
+    int puntosjugador=0, puntosmaquina=0;
+    if (jugador == maquina) {
+        cout << "Empate" << endl;
+    } else if ((jugador == 1 && maquina == 3) || (jugador == 2 && maquina == 1) || (jugador == 3 && maquina == 2)) {
+        cout << "Has ganado." << endl;
+        puntosjugador++;
+    } else {
+        cout << "La maquina gana." << endl;
+        puntosmaquina++;  
     }
 }
 
+
 main()
 {
-    int opcion,dif,valorm;
-    cout<<"Piedra, papel o tijera"<<endl;
 
-    condicion(dif);
-    int seleccion = seleccionjugador(opcion);
-    comparacion(seleccion);
 }
 
 //hice mi mejor esfuerzo inge :,(//
