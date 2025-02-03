@@ -10,8 +10,8 @@ void llenaVector (int num, int v[])
     srand(time(NULL));
     for(int i; i<num; i++)
     {
-        //v[i]=rand()%20+1;//
-        cin>>v[i];
+        v[i]=rand()%20+1;
+        //cin>>v[i];//
     }
 }
 
