@@ -58,4 +58,5 @@ main()
     cout<<"Ingrese el dato a buscar: ";
     cin>>dato;
     (isBusquedaBInaria(vec, numElem, dato))? cout<<"Dato encontrado.":cout<<"Dato no encontrado.";
+    
 }
