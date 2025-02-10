@@ -22,7 +22,8 @@ int contarPalabras(char cad[]) // validacion por si hay espacios seguidos//
 {
     int palabras = 0, i;
     bool palabra = false;
-    /*for (i = 0; cad[i] != '\0'; i++)
+    /*RECUENTO DE PALABRAS SEGUN EL NUMERO DE ESPACIOS
+    for (i = 0; cad[i] != '\0'; i++)
     {
         if ((cad[i] == ' ' && cad[i + 1] != ' ' && cad[i + 1] != '\0'))
         {
@@ -46,6 +47,7 @@ int contarPalabras(char cad[]) // validacion por si hay espacios seguidos//
     }
     return palabras;*/
 
+    //RECEUNTO DE PALABRAS SEGUNEL VALOR BOOLEANO DE PALABRA//
     for (i = 0; cad[i] != '\0'; i++)
     {
         if (cad[i] != ' ' && !palabra)
