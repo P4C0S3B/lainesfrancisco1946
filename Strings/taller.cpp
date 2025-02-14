@@ -43,7 +43,7 @@ main()
     subcad=cadena.substr(5);
     cout << subcad << endl;
 
-    //Reemplazar parte de la cadena
+    //Reemplazar parte de la cadena, con el valor 0 en la segunda posicion, realiza el cambio y desplaza las letras hacia la derecha
 
     cadena.replace(6, 5, "accion");
     cout << cadena << endl;
