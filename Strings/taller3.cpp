@@ -15,7 +15,7 @@ void reemplazoString(string original, string valor, string reemp)
     tamaño = original.size();
     pos  = hallarDato(original, valor);
     if(pos != string::npos){
-        original.replace(pos, tamaño, reemp.substr(0, tamaño));
+        original.replace(pos, valor.size(), reemp);
     }
     cout << original << endl;
 }

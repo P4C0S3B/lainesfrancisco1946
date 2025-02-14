@@ -36,7 +36,13 @@ main ()
     cout << "Comparacion: " << comparacion << endl;
     int encontrado = cadena1.find("ol");
     cout << "Encontrado: " << encontrado << endl;
-    
+
     //string libreria, :: operador de acceso a la libreria, npos variable contenida en la libreria
     (cadena1.find("cos") == string::npos)?cout<<"No se encuentra\n":cout<<"Se encuentra\n";
+
+    string numerotr= "123";
+    int numero = stoi(numerotr);//stoi convierte string a int
+    cout << endl;
+    
+
 }
