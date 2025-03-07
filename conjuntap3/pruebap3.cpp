@@ -91,7 +91,7 @@ void generarTabla(vector<conductor> &conductores, int num)
 }
 void generarGraficoBarras(const vector<conductor> &conductores, int num)
 {
-    cout << "\nGrafico de barras de kilómetros recorridos por cada conductor:\n";
+    cout << "\nGrafico de barras de kilometros recorridos por cada conductor:\n";
     int maxBarLength = 50; // Máxima longitud de la barra en caracteres
     for (int i = 0; i < num; i++)
     {

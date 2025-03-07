@@ -1,0 +1,6 @@
+Cantidad total de cada articulo: 0
+Cantidad total en la sucursal Sur: 
+La cantidad del articulo teclado en la sucursal Norte: 
+La recaudación total de cada sucursal: 
+La recaudación total de la empresa: 
+La sucursal de mayor recaudación: 
