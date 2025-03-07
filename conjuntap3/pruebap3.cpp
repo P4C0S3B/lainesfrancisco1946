@@ -89,6 +89,21 @@ void generarTabla(vector<conductor> &conductores, int num)
     cout << "====================================================================================================================\n";
     cout << "Conductor con mas kilometros recorridos: " << conductores[maxIndex].nombre << " con " << maxKm << " kilometros." << endl;
 }
+void generarGraficoBarras(const vector<conductor> &conductores, int num)
+{
+    cout << "\nGrafico de barras de kilómetros recorridos por cada conductor:\n";
+    int maxBarLength = 50; // Máxima longitud de la barra en caracteres
+    for (int i = 0; i < num; i++)
+    {
+        int barLength = static_cast<int>((conductores[i].kilometrostotal / 10)); // Ajustamos para que la barra sea proporcional
+        cout << setw(20) << left << conductores[i].nombre << " | ";
+        for (int j = 0; j < barLength; j++)
+        {
+            cout << "*";
+        }
+        cout << " " << conductores[i].kilometrostotal << " km" << endl;
+    }
+}
 main()
 {
     vector<conductor> conductores;
@@ -108,4 +123,5 @@ main()
     registroNombreConductores(conductores, nCon);
     registrarKmConductor(conductores, nCon);
     generarTabla(conductores, nCon);
+    generarGraficoBarras(conductores, nCon);
 }
